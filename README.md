@@ -1,4 +1,4 @@
 Kotlin Hello World Demo
 =======================
 
-Hello world from kotlin. Open it in IDE and run `Hello.kt`
+Run `Hello.kt` in your IDE.
