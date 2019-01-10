@@ -41,4 +41,10 @@ class FileStore(dataDir: File) {
         }
     }
 
+    fun clear() {
+        // Note: the orders is important
+        val files = listOf(addingFile, deletingFile, dataFile)
+        files.filter { it.exists() }.forEach { it.delete() }
+    }
+
 }
