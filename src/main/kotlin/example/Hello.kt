@@ -1,7 +1,17 @@
 package example
 
-fun main(args: Array<String>) {
-    println(hello("Kotlin"))
-}
+import java.io.File
 
-fun hello(name: String): String = "Hello, $name!"
+fun main(args: Array<String>) {
+    val dataDir = run {
+        val dir = File("./db")
+        if (!dir.exists()) dir.mkdir()
+        dir
+    }
+
+    val fileStore = FileStore(dataDir)
+    fileStore.write("Hello-" + System.currentTimeMillis())
+
+    val content = fileStore.read()
+    println(content)
+}
