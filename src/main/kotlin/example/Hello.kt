@@ -14,4 +14,6 @@ fun main(args: Array<String>) {
 
     val content = fileStore.read()
     println(content)
+
+    fileStore.clear()
 }
