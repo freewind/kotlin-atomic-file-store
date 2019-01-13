@@ -34,7 +34,7 @@ ext {
     publishedGroupId = 'com.github.freewind'
     // `artifact` also use as `bintray.pkg.name` for simplifying
     artifact = 'kotlin-atomic-file-store'
-    libraryVersion = '0.1.0'
+    libraryVersion = '0.2.0'
     // `libraryName` also uses as `bintray.pkg.libraryName` and `bintray.pkg.version.libraryName`
     libraryName = 'kotlin-atomic-file-store'
 
