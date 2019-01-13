@@ -1,4 +1,4 @@
-package example
+package com.github.freewind.kotlin.atomicfilestore
 
 import java.io.File
 
